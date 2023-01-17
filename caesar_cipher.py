@@ -6,11 +6,12 @@ def encode_char(letter):
     else:
         return chr(ord(letter)+int(sys.argv[1]))
 
-
+for line in sys.stdin:
+    message = line
+    break
 count = 0
 num_of_blocks = 0
 msg_encoded = ""
-message = "My name is Fiyin"
 msg_decoded = ""
 
 for char in message:
