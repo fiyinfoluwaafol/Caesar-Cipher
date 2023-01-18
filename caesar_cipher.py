@@ -1,7 +1,7 @@
 import sys
 
 def encode_char(letter):
-    if letter == "Y" or letter == "Z":
+    if ord(letter) > (90-int(sys.argv[1])):
         return chr(ord(letter)+int(sys.argv[1])-26)
     else:
         return chr(ord(letter)+int(sys.argv[1]))
